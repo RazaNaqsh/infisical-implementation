@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  fastapi-service:
+    build: .
+    container_name: fastapi_env_demo
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
